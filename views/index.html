@@ -1,0 +1,122 @@
+<html>
+    <!-- <body onkeydown="pressKey(event)"> -->
+        <body>
+            <div class="game">
+                <div id="playground" class="playground">
+                    <div class="ladder" style="bottom: 25; left:600"></div>
+                    <div class="ladder" style="bottom: 125; left:100"></div>
+                    <div class="ladder" style="bottom: 225; left:400"></div>
+                    <div class="ladder" style="bottom: 325; left:250"></div>
+        
+                    <div class="platform" style="bottom: 0;"></div>
+                    <div class="platform" style="bottom: 100;"></div>
+                    <div class="platform" style="bottom: 200;"></div>
+                    <div class="platform" style="bottom: 300;"></div>
+                    <div class="platform" style="bottom: 400;"></div>
+        
+                    <div id="princess" class="princess"></div>
+        
+                    <div id="enemy" class="enemy"></div>
+
+                    <div class="blockingblock" style="top:525; left: 100"></div>
+                    <div class="blockingblock" style="top:425; left: 400"></div>
+                    <div class="blockingblock" style="top:525; left: 400"></div>
+                    <div class="blockingblock" style="top:525; left: 250"></div>
+                    <div class="blockingblock" style="top:425; left: 250"></div>
+                    <div class="blockingblock" style="top:325; left: 250"></div>
+
+
+                    <div id="player" class="player"></div>
+                </div>
+            </div>
+     
+            
+
+    </body>
+
+    <script src="stream.js"></script>
+    <script src="redux.js"></script>
+    <script src="game.js"></script>
+
+    <script>
+
+    
+    </script>
+
+    <style>
+        body {
+            background-color: #CD5C5C; display: flex;
+            justify-content: center;
+            
+        }
+        .game {
+            align-items: center;
+        }
+
+        .playground{
+            height: 600px;
+            width: 700px;
+            background-color: black;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            position: relative;
+           
+        }
+
+        .platform{
+            height: 25px;
+            width: 700px;
+            background-color: green;
+            position: absolute;  
+        }
+
+        .player{
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            position: absolute;  
+            bottom: 25;
+        }
+
+        .princess{
+            height: 25px;
+            width: 25px;
+            background-color: pink;
+            position: absolute;  
+            bottom: 425;
+            left:650;
+        }
+
+        .enemy{
+            height: 50px;
+            width: 50px;
+            background-color: #e45d00;
+            position: absolute;  
+            bottom: 425;
+            left:50;
+        }
+
+        .ladder{
+            height: 100px;
+            width: 25px;
+            background-color: orange;
+            position: absolute; 
+        }
+
+        .missile{
+            height: 30px;
+            width: 15px;
+            background-color: red;
+            position: absolute; 
+        }
+
+        .blockingblock{
+            height: 25px;
+            width: 25px;
+            background-color: purple;
+            position: absolute;  
+        }
+
+    </style>
+</html>
