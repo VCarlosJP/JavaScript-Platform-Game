@@ -1,27 +1,13 @@
-Welcome to Glitch
+JavaScript Platform Game
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Run the project on Glitch: https://donkeykong-v.glitch.me/
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+### About The Game
+A simple platform game coded with JavaScript. The game contains 5 levels, you have to avoid the missiles of the enemy and take over the pink square in order to complete the level.
 
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+### Node Server
+The project has a nodejs server for displaying the whole game. When a user completes a level, a HTTP request is sent for increasing the speed of the missile firing.
 
 
-Made by [Glitch](https://glitch.com/)
--------------------
 
-\ ゜o゜)ノ
